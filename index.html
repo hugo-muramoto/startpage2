@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>-|Inicio|-</title>
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                /*background-image: linear-gradient(to bottom right, rgb(205, 143, 241), rgb(235, 158, 130));*/
+                background-image: linear-gradient(to bottom right, #262626, #222222);
+            }
+			
+            .box-baixo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                -ms-user-select:none;
+                -moz-user-select:none;
+                -webkit-user-select:none;
+                -webkit-touch-callout: none;
+                -khtml-user-select: none;
+                user-select:none;
+				background-color: #282828;
+            }
+			
+			#imagem{
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+            #mensagem{
+                font-family: 'Helvetica', monospace; 
+                color:#f781b2;
+                font-size:22px;
+                padding-top: 50px;
+				padding-left: 40px;
+            }
+
+            .esquerda{
+                width: 210px;
+                height: 450px;
+            }
+
+            #relogio{
+                font-family: 'Helvetica', monospace; 
+                align-items:center;
+                justify-content: center;
+                font-size:22px;
+                padding-top: 10px;
+				padding-left: 58px;
+            }
+
+            .direita{
+                /*background-color:rgb(43, 15, 31);*/
+                width: 600px;
+                height: 450px;
+            }
+
+            .direita .conteudo{
+                font-family: 'Helvetica', monospace; 
+                padding-top: 40px;
+                padding-left: 40px;
+                align-items:center;
+                justify-content: center;
+                font-size:18px;
+            }
+
+            .direita s{
+                color: #e9b6ad;
+                /*color: #a57562*/
+                
+            }
+
+            .lista{
+                margin-left: 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .link{
+                text-decoration: none;
+                display: inline-block;
+                color: #eed0b4;
+                transition: .3s;
+            }
+
+            .link:hover{
+                color: #fcadd2;;
+            }
+
+            .nada{
+                color:#f781b2;
+                /*color: #a57562*/
+            }
+            .nada:hover{
+                color:#f781b2;
+                /*color: #a57562*/
+            }
+			
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="box-geral">
+            
+            <div class="box-baixo">
+                <div class="esquerda" id='imagem'>
+                </div>
+                <div class="direita">
+                    <div id="mensagem" class=""></div>
+                    <div class="conteudo">
+                        
+                        <s><b>entretenimento</b></s>
+                        
+                        <div class="lista">
+                            <a class="nada">⤷ </a>
+                            <a class="link" href="https://animeshouse.net/"> animeshouse </a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://twitch.tv/">twitch</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://youtube.com/">youtube</a>
+
+                        </div>
+
+                        <s><b>faculdade</b></s>
+
+                        <div class="lista">
+                            <a class="nada">⤷ </a>
+                            <a class="link" href="https://drive.google.com/drive/u/1/my-drive">drive</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://geogebra.com/classic">geogebra</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://mail.google.com/mail/u/1/#inbox">gmail</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href='https://www.office.com/'>office</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://pythonml.apps.services/">pythonml</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://sia.ibmec.br/sianet/logon">sia</a>
+                        
+                        </div>
+                        
+                        <s><b>lojas</b></s>
+
+                        <div class="lista">
+                            <a class="nada">⤷ </a>
+                            <a class="link" href="https://amazon.com.br">amazon</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://fastshop.com.br">fastshop</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://lojaiplace.com.br">iplace</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://kabum.com.br">kabum</a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://kalunga.com.br">kalunga</a>
+                        
+                        </div>  
+
+                        <s><b>sns</b></s>
+                        
+                        <div class="lista">
+                            <a class="nada">⤷ </a>
+                            <a class="link" href="https://instagram.com/"> instagram </a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://www.linkedin.com/"> linkedin </a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://reddit.com"> reddit </a>
+                            <a class="nada"> / </a>
+                            <a class="link" href="https://web.whatsapp.com/"> whatsapp </a>
+                        </div>
+                        
+                        <s><b>outros</b></s>
+                        
+                        <div class="lista">
+                            <a class="nada">⤷ </a>
+							<a class="link" href="https://hugo-muramoto.medium.com/">medium</a>
+							<a class="nada"> / </a>
+                            <a class="link" href="http://192.168.15.1/"> router </a>
+                            <a class="nada"> / </a>
+							<a class="link" href="https://steamcommunity.com/id/hideomuramoto/">steam</a>
+                            
+
+                        </div>
+                        
+                          
+                    </div>
+					<div>
+						<a href='https://hugo-muramoto.github.io/startpage/' style='padding-left: 545px; opacity: 0.25;'><img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fa.deviantart.net%2Favatars%2Fm%2Fo%2Fmonokuma.gif%3F1&f=1&nofb=1'></a>
+					</div>
+                </div>
+
+            </div>
+        </div>
+
+        <p style="color:#eed0b4; opacity: 10%; -ms-user-select:none; -moz-user-select:none; -webkit-user-select:none;-webkit-touch-callout: none; -khtml-user-select: none;user-select:none;">
+            Site desenvolvido por 
+            <span style="color:#f781b2">Hugo Muramoto</span>.
+        </p>
+        
+        <script>
+            //Momentos do dia
+            var manha = 'Bom dia, <span style="color:#e9b6ad">Hugo</span>. 🌤'.bold();
+            var tarde = 'Boa tarde, <span style="color:#e9b6ad">Hugo</span>. 🌆'.bold();
+            var noite = 'Boa noite, <span style="color:#e9b6ad">Hugo</span>. 🌙'.bold();
+            var dormir = 'Vai dormir, <span style="color:#e9b6ad">Hugo</span>! 🛏'.bold();
+
+            //Dias da semana
+            var dom = 'Domingo,'.bold();
+            var seg = 'Segunda-feira,'.bold();
+            var ter = 'Terça-feira,'.bold();
+            var qua = 'Quarta-feira,'.bold();
+            var qui = 'Quinta-feira,'.bold();
+            var sex = 'Sexta-feira,'.bold();
+            var sab = 'Sábado,'.bold();
+
+            //Eventos
+            var niver = 'Parabéns, Hugo! 🎂'.bold();
+            var natal = 'Feliz Natal, Hugo! 🎅'.bold();
+            var dia1 = 'Feliz Ano Novo, Hugo! 🎆'.bold();
+
+            //Exemplo de mensagem: Hoje é sexta-feira, 22/1/21. Tenha um bom dia, Hugo
+
+            let hoje = new Date();
+            hora = (hoje.getUTCHours()-3);
+            dia = hoje.getDate();
+            ds = hoje.getDay() + 1;
+            mes = hoje.getMonth() + 1;
+
+            function dia_semana(){
+                if(hoje.getDay() == 0){
+                    return dom;
+                }
+                else if(hoje.getDay() == 1){
+                    return seg;
+                }
+                else if(hoje.getDay() == 2){
+                    return ter;
+                }
+                else if(hoje.getDay() == 3){
+                    return qua;
+                }
+                else if(hoje.getDay() == 4){
+                    return qui;
+                }
+                else if(hoje.getDay() == 5){
+                    return sex;
+                }
+                else{
+                    return sab;
+                }
+            }
+
+            if(dia == 20 && mes == 2){
+                document.getElementById('mensagem').innerHTML = niver;
+            }
+            else if(dia == 25 && mes == 12){
+                document.getElementById('mensagem').innerHTML = natal;
+            }
+            else if(dia == 1 && mes == 1){
+                document.getElementById('mensagem').innerHTML = dia1;
+            }
+            else if(ds == 1){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else if(ds == 2){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ".  " + relogio() + ".<br> " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else if(ds == 3){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else if(ds == 4){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";			
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else if(ds == 5){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else if(ds == 6){
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+            else{
+                if(hora >=6 && hora <12){
+                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + manha;
+					document.getElementById("imagem").style.backgroundImage = "url(https://thumbs.gfycat.com/MilkyCarelessCollie-size_restricted.gif)";
+                }
+                else if(hora >=12 && hora <18){
+                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + tarde;
+					document.getElementById("imagem").style.backgroundImage = "url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2Ff8e0c0db8c69200cfe86c0568b649918%2Ftenor.gif%3Fitemid%3D10744147&f=1&nofb=1)";
+                }
+                else if(hora >=18 && hora <24){
+                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + noite;
+					document.getElementById("imagem").style.backgroundImage = "url(https://data.whicdn.com/images/309123890/original.gif)";
+                }
+                else{
+                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + dormir;
+					document.getElementById("imagem").style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/qSYar7Vw3O1AUB9RVWiwmlo5Z31S6AmEQDtkzXumGNhI2iopeXHVzvlesjI5IvbNdwCQybXUHzfbjb-r90Al2H6w33YhxE_IiX0L3oNq-ifxILAouVWX9jM)";
+                }
+            }
+
+            function relogio() {
+                let hoje2 = new Date();
+                s = hoje2.getSeconds();
+                min = hoje2.getMinutes();
+                h = (hoje2.getUTCHours()-3);
+                
+                    return ("<span style='color:#e9b6ad'>" + (h < 10 ? ("0" + h) : h) + ':' + (min < 10 ? ("0" + min) : min) + "</span>").bold();
+            }
+
+
+            //window.onload = () => {
+            //    document.getElementById("relogio").innerHTML = relogio();
+            //    setInterval( () => {
+            //        document.getElementById("relogio").innerHTML = relogio();
+            //    },6000);
+            //}
+
+        </script>
+
+    </body>
+
+</html>
