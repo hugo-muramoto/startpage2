@@ -438,18 +438,12 @@
                 let hoje2 = new Date();
                 s = hoje2.getSeconds();
                 min = hoje2.getMinutes();
-                h = (hoje2.getUTCHours()-3);
-                
-                    return ("<span style='color:#e9b6ad'>" + (h < 10 ? ("0" + h) : h) + ':' + (min < 10 ? ("0" + min) : min) + "</span>").bold();
+                h = (hoje2.getUTCHours());
+		    
+		if h<3{ h-=3; }
+			
+                return ("<span style='color:#e9b6ad'>" + (h < 10 ? ("0" + h) : h) + ':' + (min < 10 ? ("0" + min) : min) + "</span>").bold();
             }
-
-
-            //window.onload = () => {
-            //    document.getElementById("relogio").innerHTML = relogio();
-            //    setInterval( () => {
-            //        document.getElementById("relogio").innerHTML = relogio();
-            //    },6000);
-            //}
 
         </script>
 
