@@ -440,10 +440,16 @@
                 min = hoje2.getMinutes();
                 h = (hoje2.getUTCHours());
 		    
-		if (h<3){ 
-		  h-=3; 
+		if (h==0){ 
+		  h=21; 
+		} elif (h==1){
+		  h=22
+		} elif (h==2){
+		  h=23
+		} else {
+		  h-=3
 		}
-			
+		    
                 return ("<span style='color:#e9b6ad'>" + (h < 10 ? ("0" + h) : h) + ':' + (min < 10 ? ("0" + min) : min) + "</span>").bold();
             }
 
