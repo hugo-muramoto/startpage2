@@ -235,206 +235,15 @@
             var niver = 'Parabéns, Hugo! 🎂'.bold();
             var natal = 'Feliz Natal, Hugo! 🎅'.bold();
             var dia1 = 'Feliz Ano Novo, Hugo! 🎆'.bold();
-
-            //Exemplo de mensagem: Hoje é sexta-feira, 22/1/21. Tenha um bom dia, Hugo
-
+	    
+	    //Variáveis corrigidas
             let hoje = new Date();
             hora = (hoje.getUTCHours()-3);
             dia = hoje.getDate();
             ds = hoje.getDay() + 1;
             mes = hoje.getMonth() + 1;
-
-            function dia_semana(){
-                if(hoje.getDay() == 0){
-                    return dom;
-                }
-                else if(hoje.getDay() == 1){
-                    return seg;
-                }
-                else if(hoje.getDay() == 2){
-                    return ter;
-                }
-                else if(hoje.getDay() == 3){
-                    return qua;
-                }
-                else if(hoje.getDay() == 4){
-                    return qui;
-                }
-                else if(hoje.getDay() == 5){
-                    return sex;
-                }
-                else{
-                    return sab;
-                }
-            }
-
-            if(dia == 20 && mes == 2){
-                document.getElementById('mensagem').innerHTML = niver;
-            }
-            else if(dia == 25 && mes == 12){
-                document.getElementById('mensagem').innerHTML = natal;
-            }
-            else if(dia == 1 && mes == 1){
-                document.getElementById('mensagem').innerHTML = dia1;
-            }
-            else if(ds == 1){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-		    document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = dom + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else if(ds == 2){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ".  " + relogio() + ".<br> " + tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = seg + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else if(ds == 3){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = ter + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else if(ds == 4){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";	
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = qua + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else if(ds == 5){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = qui + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else if(ds == 6){
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = sex + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-            else{
-                if(hora >=6 && hora <12){
-                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + manha;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monomi.gif";
-                }
-                else if(hora >=12 && hora <18){
-                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ tarde;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
-                }
-                else if(hora >=18 && hora <24){
-                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". "+ relogio() + ".<br> " + noite;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
-                }
-                else{
-                    document.getElementById('mensagem').innerHTML = sab + " " + (dia + "/" + mes).bold() + ". " + relogio() + ".<br> "+ dormir;
-					document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
-			document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
-                }
-            }
-
-            function relogio() {
+	    
+	    function relogio() {
                 let hoje2 = new Date();
                 s = hoje2.getSeconds();
                 min = hoje2.getMinutes();
@@ -452,6 +261,64 @@
 		    
                 return ("<span style='color:#e9b6ad'>" + (h < 10 ? ("0" + h) : h) + ':' + (min < 10 ? ("0" + min) : min) + "</span>").bold();
             }
+		
+	    function msg(hora){
+	        if(hora >=6 && hora <12){
+	            document.getElementById("imagem").style.backgroundImage = "url(./gifs/morning2.gif)";
+		    document.getElementById("danganronpa").src = "./gifs/monomi.gif";
+		    return manha;
+                }
+                else if(hora >=12 && hora <18){
+		    document.getElementById("imagem").style.backgroundImage = "url(./gifs/afternoon2.gif)";
+	            document.getElementById("danganronpa").src = "./gifs/monokuma2.gif";
+		    return tarde;
+                }
+                else if(hora >=18 && hora <24){
+		    document.getElementById("imagem").style.backgroundImage = "url(./gifs/night2.gif)";
+		    document.getElementById("danganronpa").src = "./gifs/monokuma.gif";
+		    return noite;
+                }
+                else{
+		    document.getElementById("imagem").style.backgroundImage = "url(./gifs/sleep2.gif)";
+		    document.getElementById("danganronpa").src = "./gifs/bedtime.webp";
+		    return dormir;
+                }
+	    }
+	 
+	    function msg2(dia, dia_semana, mes){
+		if(dia == 20 && mes == 2){
+		    return niver;
+		}
+		else if(dia == 25 && mes == 12){
+	            return natal;
+		}
+		else if(dia == 1 && mes == 1){
+	            return dia1;
+		}
+                else if(dia_semana == 1){
+                    return dom;
+                }
+                else if(dia_semana == 2){
+                    return seg;
+                }
+                else if(dia_semana == 3){
+                    return ter;
+                }
+                else if(dia_semana == 4){
+                    return qua;
+                }
+                else if(dia_semana == 5){
+                    return qui;
+                }
+                else if(dia_semana == 6){
+                    return sex;
+                }
+                else{
+                    return sab;
+                }
+            }
+	    
+	    document.getElementById('mensagem').innerHTML = msg(hora)+ "<br>" + msg2(dia, ds, mes) + " " + (dia + "/" + mes).bold() + ". "+ relogio() + '.';
 
         </script>
 
